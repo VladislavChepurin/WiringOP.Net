@@ -18,11 +18,14 @@ namespace TestPwm {
             int range = -1;
             int value = -1;
             int pin = 0;
-            try {
+            try 
+            {
                 pin = Int32.Parse(args[0]);
                 range = Int32.Parse(args[1]);
                 value = Int32.Parse(args[2]);
-            } catch {
+            } 
+            catch 
+            {
                 Console.WriteLine("Parse Error");
                 return;
             }
